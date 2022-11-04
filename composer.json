@@ -1,0 +1,7 @@
+{
+    "name": "webtourismus/alpinejs-mask",
+    "description": "Mirror of https://www.npmjs.com/package/@alpinejs/mask as drupal-library",
+    "license": "MIT",
+    "type": "drupal-library",
+    "homepage": "https://alpinejs.dev/plugins/mask"
+}
