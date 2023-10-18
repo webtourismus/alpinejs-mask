@@ -153,7 +153,9 @@ function formatMoney(input, delimiter = ".", thousands, precision = 2) {
     return "-";
   if (/^\D+$/.test(input))
     return "9";
-  thousands = thousands != null ? thousands : delimiter === "," ? "." : ",";
+  if (thousands === null || thousands === void 0) {
+    thousands = delimiter === "," ? "." : ",";
+  }
   let addThousands = (input2, thousands2) => {
     let output = "";
     let counter = 0;
